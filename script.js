@@ -10,7 +10,6 @@ const dreams = document.getElementById("dreams");
 const openBook = document.getElementById("openBook");
 const wax = document.getElementById("wax");
 
-const music = document.getElementById("music");
 
 // ==============================
 // START
