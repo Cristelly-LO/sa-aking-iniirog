@@ -1,6 +1,6 @@
-// =========================
+// ==============================
 // ELEMENTS
-// =========================
+// ==============================
 
 const cover = document.getElementById("cover");
 const envelope = document.getElementById("envelope");
@@ -12,9 +12,9 @@ const wax = document.getElementById("wax");
 
 const music = document.getElementById("music");
 
-// =========================
-// OPEN BOOK
-// =========================
+// ==============================
+// START
+// ==============================
 
 openBook.addEventListener("click", () => {
 
@@ -23,62 +23,75 @@ cover.style.opacity = "0";
 setTimeout(() => {
 
 cover.classList.add("hidden");
+
 envelope.classList.remove("hidden");
 
 envelope.style.opacity = "0";
 
 setTimeout(() => {
+
 envelope.style.opacity = "1";
+
 },100);
 
 },800);
 
 });
 
-// =========================
+// ==============================
 // OPEN ENVELOPE
-// =========================
+// ==============================
 
 wax.addEventListener("click", () => {
 
-envelope.style.opacity="0";
+envelope.style.opacity = "0";
 
-setTimeout(()=>{
+setTimeout(() => {
 
 envelope.classList.add("hidden");
+
 letter.classList.remove("hidden");
 
-letter.style.opacity="0";
+letter.style.opacity = "0";
 
-setTimeout(()=>{
+setTimeout(() => {
 
-letter.style.opacity="1";
+letter.style.opacity = "1";
 
 },100);
 
-music.play();
+music.play().catch(() => {});
+
+window.scrollTo({
+top:0,
+behavior:"smooth"
+});
 
 },800);
 
 });
 
-// =========================
-// LETTER TO DREAMS
-// =========================
+// ==============================
+// SHOW DREAM GALLERY
+// ==============================
 
-window.addEventListener("scroll",()=>{
+window.addEventListener("scroll", () => {
 
 if(letter.classList.contains("hidden")) return;
 
-const scrollBottom =
-window.innerHeight + window.scrollY;
+const scrollPosition =
+window.scrollY + window.innerHeight;
 
 const pageHeight =
 document.body.offsetHeight;
 
-if(scrollBottom >= pageHeight-10){
+if(scrollPosition >= pageHeight - 100){
 
 dreams.classList.remove("hidden");
+
+dreams.scrollIntoView({
+behavior:"smooth"
+});
 
 }
 
