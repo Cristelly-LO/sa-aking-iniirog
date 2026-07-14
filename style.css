@@ -142,7 +142,7 @@ LETTER
 =========================== */
 
 #letter{
-background:#f7f1e8;
+background:#efe4d2;
 padding:100px 20px;
 }
 
@@ -160,6 +160,9 @@ padding:130px 110px;
 min-height:1800px;
 
 margin:auto;
+
+border-radius:8px;
+border:1px solid rgba(125,98,70,.15)
 
 box-shadow:0 25px 60px rgba(0,0,0,.18);
 
