@@ -3,52 +3,67 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Sa Aking Iniirog</title>
 
-<!-- Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
 
-<!-- ================= COVER ================= -->
+<audio id="music" loop>
+<source src="music/piano.mp3" type="audio/mpeg">
+</audio>
+
+<!-- COVER -->
 
 <section id="cover">
 
 <div class="cover-content">
 
-<p class="subtitle">
+<p class="small-title">
+
 Isang Munting Aklat ng Pag-ibig
+
 </p>
 
 <h1>
+
 Sa Aking Iniirog
+
 </h1>
 
 <p class="author">
+
 ni Cristel
+
 </p>
 
-<div class="line"></div>
+<div class="divider"></div>
 
 <p class="date">
+
 Ika-16 ng Hulyo, 2026
+
 </p>
 
 <button id="openBook">
+
 Pindutin upang buksan ang liham
+
 </button>
 
 </div>
 
 </section>
 
-<!-- ================= ENVELOPE ================= -->
+<!-- ENVELOPE -->
 
 <section id="envelope" class="hidden">
 
@@ -56,14 +71,14 @@ Pindutin upang buksan ang liham
 
 <img
 src="images/envelope.png"
-alt="Envelope"
-class="envelope">
+class="envelope"
+alt="Envelope">
 
 <img
 src="images/wax.png"
-alt="Wax Seal"
 class="wax"
-id="wax">
+id="wax"
+alt="Wax">
 
 </div>
 
@@ -75,7 +90,7 @@ Pindutin ang selyo upang buksan ang liham.
 
 </section>
 
-<!-- ================= LETTER ================= -->
+<!-- LETTER -->
 
 <section id="letter" class="hidden">
 
@@ -87,7 +102,7 @@ Sa Aking Iniirog na si Raymart
 
 </h2>
 
-<p class="letter-date">
+<p class="letterDate">
 
 Ika-16 ng Hulyo, 2026
 
@@ -113,19 +128,25 @@ Sa bawat pagsikat ng araw, isa lamang ang aking panalangin—na nawa'y lagi kang
 
 <p>
 
-Batid kong hindi naging magaan ang landas na iyong tinahak. Maraming pagkakataong kinailangan mong magsikap nang higit kaysa sa iba upang maabot ang iyong mga minimithi. May mga sandaling tila hindi naging patas ang buhay sa iyo, lalo na sa tuwing sumasapit ang iyong kaarawan.
+Batid kong hindi naging magaan ang landas na iyong tinahak. Maraming pagkakataong kinailangan mong magsikap nang higit kaysa sa iba upang maabot ang iyong mga minimithi. At sa bawat pagkakataong ikinuwento mo sa akin ang iyong mga pangarap, mas lalo kitang hinangaan.
 
 </p>
 
 <p>
 
-Hindi ko man mababago ang iyong nakaraan, buong puso kong hinihiling na maging bahagi ako ng bawat bukas na magpapangiti sa iyo.
+Hindi ko man mababago ang iyong nakaraan, nais kong maging bahagi ng bawat bukas na darating sa iyong buhay.
 
 </p>
 
 <p>
 
-Isa sa mga pinakaminamahal kong bahagi ng iyong pagkatao ay ang pagiging totoo mo sa aking harapan. Sa tuwing ikaw ay biglang sumasayaw sa harap ng kamera, gumagawa ng mga kalokohang tanging ikaw lamang ang makagagawa, hindi ko mapigilang mapangiti at sambitin sa aking isipan...
+Isa sa mga paborito kong bahagi ng bawat araw ay ang makita kang masaya.
+
+</p>
+
+<p>
+
+Sa tuwing ikaw ay biglang sumasayaw sa harap ng kamera, gumagawa ng mga kalokohang tanging ikaw lamang ang makagagawa, hindi ko mapigilang mapangiti at sambitin sa aking isipan...
 
 </p>
 
@@ -158,7 +179,37 @@ At pipiliin pa rin kita sa bawat bukas na ipagkakaloob sa atin ng Diyos.
 
 <p>
 
+Marahil ay hindi pa ngayon ang panahon upang magkatabi nating ipagdiwang ang lahat ng mahahalagang sandali ng ating buhay.
+
+Ngunit buong puso kong pinanghahawakan ang pag-asang darating ang araw na gigising tayong magkasama, sabay nating sasalubungin ang umaga, at hindi na lamang sa pamamagitan ng isang tawag o mensahe ko sasabihing mahal kita.
+
+</p>
+
+<p>
+
+Sa iyong kaarawan, wala akong ibang hinihiling kundi ang makita kang masaya.
+
+Nawa'y pagpalain ka ng Panginoon ng mabuting kalusugan, matatag na pananampalataya, at mga pangarap na unti-unting nagiging ganap.
+
+</p>
+
+<p>
+
 Mahal na mahal kita, Raymart.
+
+Hindi lamang sa mga araw na madali kang mahalin, kundi maging sa mga panahong pagod ka, tahimik ka, o puno ng alinlangan ang iyong puso.
+
+</p>
+
+<p>
+
+Ikaw ang aking pahinga.
+
+Ikaw ang aking tahanan.
+
+At kung bibigyan man ako ng pagkakataong pumili sa bawat buhay na aking tatahakin...
+
+Ikaw at ikaw pa rin ang pipiliin ng aking puso.
 
 </p>
 
@@ -176,9 +227,11 @@ Cristel 🤍
 
 </section>
 
-<!-- ================= DREAM GALLERY ================= -->
+<!-- DREAM GALLERY -->
 
 <section id="dreams" class="hidden">
+
+<div class="dream-paper">
 
 <h2>
 
@@ -186,44 +239,45 @@ At sa Dulo ng Kabanatang Ito...
 
 </h2>
 
-<p>
+<p class="dreamText">
 
 May mga pangarap na hindi pa naisusulat ng panahon,
+
 datapwat matagal nang naisulat ng puso.
 
-</p>
+Kung loloobin ng Diyos,
 
-<div class="gallery">
+balang araw,
 
-<img src="images/wedding.jpg" alt="Wedding">
+ang mga larawang ito ay hindi na lamang magiging bunga ng guniguni,
 
-<p>
-
-Hindi pa ito isang alaala.
-
-Isa pa lamang itong panaginip na araw-araw kong ipinagdarasal.
+kundi mga alaalang sabay nating bubuuin.
 
 </p>
 
-<img src="images/forehead.jpg" alt="Forehead Kiss">
+<img src="images/wedding.jpg" class="gallery">
 
-<p>
+<p class="caption">
 
-Isang halik na sana'y ipagkaloob ng Diyos sa tamang panahon.
-
-</p>
-
-<img src="images/family.jpg" alt="Family">
-
-<p>
-
-At kung loloobin ng Maykapal,
-
-ito ang tahanang nais kong buuin kasama ka.
+"Sa aking guniguni, dito nagsisimula ang panibagong kabanata ng ating buhay."
 
 </p>
 
-</div>
+<img src="images/forehead.jpg" class="gallery">
+
+<p class="caption">
+
+"Isang halik na minsan ay pangarap lamang."
+
+</p>
+
+<img src="images/family.jpg" class="gallery">
+
+<p class="caption">
+
+"At kung loloobin ng Diyos, ito ang tahanang nais kong buuin kasama ka."
+
+</p>
 
 <h3>
 
@@ -237,23 +291,28 @@ SIMULA PA LAMANG
 
 </h1>
 
-<p>
+<p class="ending">
 
 ng ating walang hanggang kuwento.
 
 </p>
 
+<p class="credit">
+
+Inilathala ng isang pusong umiibig.
+
+<br><br>
+
+— Cristel
+
+</p>
+
+</div>
+
 </section>
-
-<!-- ================= MUSIC ================= -->
-
-<audio id="music" loop>
-
-<source src="music/piano.mp3" type="audio/mpeg">
-
-</audio>
 
 <script src="script.js"></script>
 
 </body>
+
 </html>
