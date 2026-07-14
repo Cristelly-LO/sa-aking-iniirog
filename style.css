@@ -1,6 +1,9 @@
-/* ===================================
-RESET
-=================================== */
+/* ======================================
+SA AKING INIIROG
+STYLE.CSS
+====================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Great+Vibes&display=swap');
 
 *{
 margin:0;
@@ -13,222 +16,348 @@ scroll-behavior:smooth;
 }
 
 body{
-
+background:#f7f1e8;
+color:#4b3527;
 font-family:'Cormorant Garamond',serif;
-background:#f8f3eb;
-color:#4d3b2e;
 overflow-x:hidden;
-
 }
-
-/* ===================================
-HIDDEN
-=================================== */
 
 .hidden{
-
 display:none;
-
 }
 
-/* ===================================
-GENERAL
-=================================== */
-
 section{
-
 width:100%;
 min-height:100vh;
-
 display:flex;
 justify-content:center;
 align-items:center;
 flex-direction:column;
-
-padding:40px;
-
-transition:1s;
-
+padding:50px 20px;
 }
 
-/* ===================================
+/* ===========================
 COVER
-=================================== */
+=========================== */
 
 #cover{
-
-background:
-linear-gradient(rgba(248,243,235,.85),rgba(248,243,235,.85)),
-url("images/paper.jpg");
-
-background-size:cover;
-background-position:center;
-
+background:#f7f1e8;
 text-align:center;
-
 }
 
 .cover-content{
-
-max-width:700px;
-
-animation:fadeUp 1.8s ease;
-
+max-width:800px;
+animation:fadeUp 1.5s ease;
 }
 
 .small-title{
-
+letter-spacing:6px;
 text-transform:uppercase;
-
-letter-spacing:5px;
-
+color:#9b7d61;
 font-size:18px;
-
-color:#8b7158;
-
 margin-bottom:30px;
-
 }
 
 .cover-content h1{
-
 font-family:'Great Vibes',cursive;
-
-font-size:92px;
-
-font-weight:400;
-
-color:#5f4332;
-
+font-size:95px;
+color:#6a4b39;
 margin-bottom:15px;
-
 }
 
 .author{
-
 font-size:28px;
-
-margin-top:10px;
-
 }
 
 .divider{
-
-width:140px;
-
-height:1px;
-
-background:#c5a46d;
-
+width:150px;
+height:2px;
+background:#c8a56d;
 margin:40px auto;
-
 }
 
 .date{
-
-font-size:23px;
-
+font-size:22px;
 margin-bottom:50px;
-
 }
 
-/* ===================================
-BUTTON
-=================================== */
-
 button{
-
-background:#6f513c;
-
+background:#6b4d39;
 color:white;
-
 border:none;
-
-padding:18px 42px;
-
 border-radius:50px;
-
-cursor:pointer;
-
+padding:18px 45px;
 font-size:20px;
-
-font-family:'Cormorant Garamond',serif;
-
-transition:.35s;
-
+cursor:pointer;
+transition:.3s;
 }
 
 button:hover{
-
-transform:translateY(-4px);
-
-box-shadow:0 12px 25px rgba(0,0,0,.15);
-
+transform:translateY(-3px);
+box-shadow:0 15px 30px rgba(0,0,0,.15);
 }
 
-/* ===================================
+/* ===========================
 ENVELOPE
-=================================== */
+=========================== */
 
 #envelope{
-
-background:#efe3d2;
-
+background:#f3eadf;
 }
 
 .envelope-wrapper{
-
-width:360px;
-
 position:relative;
-
+width:550px;
+max-width:90%;
 }
 
 .envelope{
-
 width:100%;
-
 display:block;
-
 }
 
 .wax{
-
 position:absolute;
-
-width:80px;
-
+width:95px;
 left:50%;
-
-top:49%;
-
+top:50%;
 transform:translate(-50%,-50%);
-
 cursor:pointer;
-
 transition:.35s;
-
 }
 
 .wax:hover{
-
 transform:translate(-50%,-50%) scale(1.08);
-
 }
 
 .instruction{
+margin-top:35px;
+font-size:22px;
+font-style:italic;
+color:#6d5140;
+}
 
-margin-top:40px;
+/* ===========================
+LETTER
+=========================== */
 
-font-size:21px;
+#letter{
+background:#f7f1e8;
+padding:100px 20px;
+}
+
+.paper{
+
+width:100%;
+max-width:900px;
+
+background:url("paper.png");
+background-size:100% 100%;
+background-repeat:no-repeat;
+
+padding:130px 110px;
+
+min-height:1800px;
+
+margin:auto;
+
+box-shadow:0 25px 60px rgba(0,0,0,.18);
+
+}
+
+.paper h2{
+
+font-family:'Great Vibes',cursive;
+
+font-size:70px;
+
+text-align:center;
+
+color:#6a4b39;
+
+margin-bottom:25px;
+
+}
+
+.letterDate{
+
+text-align:center;
+
+margin-bottom:60px;
+
+font-size:22px;
+
+color:#967658;
+
+}
+
+.paper p{
+
+font-size:26px;
+
+line-height:2.3;
+
+text-align:justify;
+
+margin-bottom:35px;
+
+}
+
+blockquote{
+
+text-align:center;
+
+font-size:34px;
+
+color:#8d5f3f;
+
+margin:60px 0;
 
 font-style:italic;
 
 }
 
-/* ===================================
-ANIMATION
-=================================== */
+.signature{
+
+text-align:right;
+
+margin-top:120px;
+
+font-size:50px;
+
+font-family:'Great Vibes',cursive;
+
+}
+
+/* ======================================
+DREAM GALLERY
+====================================== */
+
+#dreams{
+
+background:#f7f1e8;
+
+padding:120px 20px;
+
+}
+
+.dream-paper{
+
+width:100%;
+
+max-width:900px;
+
+margin:auto;
+
+text-align:center;
+
+}
+
+.dream-paper h2{
+
+font-family:'Great Vibes',cursive;
+
+font-size:70px;
+
+color:#6a4b39;
+
+margin-bottom:35px;
+
+}
+
+.dreamText{
+
+font-size:25px;
+
+line-height:2;
+
+margin-bottom:70px;
+
+}
+
+.gallery{
+
+width:100%;
+
+display:block;
+
+margin:70px auto 25px;
+
+border-radius:18px;
+
+box-shadow:0 20px 50px rgba(0,0,0,.18);
+
+transition:.5s;
+
+}
+
+.gallery:hover{
+
+transform:scale(1.02);
+
+}
+
+.caption{
+
+font-size:22px;
+
+line-height:1.8;
+
+font-style:italic;
+
+color:#7a5944;
+
+margin-bottom:70px;
+
+}
+
+#dreams h3{
+
+margin-top:90px;
+
+font-size:38px;
+
+font-weight:400;
+
+color:#6a4b39;
+
+}
+
+#dreams h1{
+
+font-size:74px;
+
+letter-spacing:5px;
+
+color:#5a3e2d;
+
+margin:10px 0;
+
+}
+
+.ending{
+
+font-size:26px;
+
+margin-top:20px;
+
+margin-bottom:70px;
+
+}
+
+.credit{
+
+font-size:20px;
+
+color:#9a7c61;
+
+margin-top:80px;
+
+}
+
+/* ======================================
+FADE ANIMATION
+====================================== */
 
 @keyframes fadeUp{
 
@@ -250,254 +379,161 @@ transform:translateY(0);
 
 }
 
-/* ===================================
-RESET
-=================================== */
+.paper,
+.gallery,
+.cover-content,
+.envelope-wrapper{
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
-
-html{
-scroll-behavior:smooth;
-}
-
-body{
-
-font-family:'Cormorant Garamond',serif;
-background:#f8f3eb;
-color:#4d3b2e;
-overflow-x:hidden;
+animation:fadeUp 1.2s ease;
 
 }
 
-/* ===================================
-HIDDEN
-=================================== */
+/* ======================================
+MOBILE
+====================================== */
 
-.hidden{
+@media (max-width:900px){
 
-display:none;
+.paper{
 
-}
+padding:90px 60px;
 
-/* ===================================
-GENERAL
-=================================== */
-
-section{
-
-width:100%;
-min-height:100vh;
-
-display:flex;
-justify-content:center;
-align-items:center;
-flex-direction:column;
-
-padding:40px;
-
-transition:1s;
+min-height:auto;
 
 }
 
-/* ===================================
-COVER
-=================================== */
+.paper h2{
 
-#cover{
-
-background:
-linear-gradient(rgba(248,243,235,.85),rgba(248,243,235,.85)),
-url("images/paper.jpg");
-
-background-size:cover;
-background-position:center;
-
-text-align:center;
+font-size:52px;
 
 }
 
-.cover-content{
+.paper p{
 
-max-width:700px;
+font-size:22px;
 
-animation:fadeUp 1.8s ease;
+}
+
+blockquote{
+
+font-size:28px;
+
+}
+
+}
+
+@media (max-width:768px){
+
+.cover-content h1{
+
+font-size:60px;
 
 }
 
 .small-title{
 
-text-transform:uppercase;
+font-size:14px;
 
-letter-spacing:5px;
-
-font-size:18px;
-
-color:#8b7158;
-
-margin-bottom:30px;
-
-}
-
-.cover-content h1{
-
-font-family:'Great Vibes',cursive;
-
-font-size:92px;
-
-font-weight:400;
-
-color:#5f4332;
-
-margin-bottom:15px;
+letter-spacing:3px;
 
 }
 
 .author{
 
-font-size:28px;
-
-margin-top:10px;
-
-}
-
-.divider{
-
-width:140px;
-
-height:1px;
-
-background:#c5a46d;
-
-margin:40px auto;
+font-size:22px;
 
 }
 
 .date{
 
-font-size:23px;
-
-margin-bottom:50px;
+font-size:18px;
 
 }
-
-/* ===================================
-BUTTON
-=================================== */
 
 button{
 
-background:#6f513c;
+width:100%;
 
-color:white;
+max-width:320px;
 
-border:none;
-
-padding:18px 42px;
-
-border-radius:50px;
-
-cursor:pointer;
-
-font-size:20px;
-
-font-family:'Cormorant Garamond',serif;
-
-transition:.35s;
-
-}
-
-button:hover{
-
-transform:translateY(-4px);
-
-box-shadow:0 12px 25px rgba(0,0,0,.15);
-
-}
-
-/* ===================================
-ENVELOPE
-=================================== */
-
-#envelope{
-
-background:#efe3d2;
+font-size:18px;
 
 }
 
 .envelope-wrapper{
 
-width:360px;
-
-position:relative;
-
-}
-
-.envelope{
-
-width:100%;
-
-display:block;
+width:320px;
 
 }
 
 .wax{
 
-position:absolute;
-
-width:80px;
-
-left:50%;
-
-top:49%;
-
-transform:translate(-50%,-50%);
-
-cursor:pointer;
-
-transition:.35s;
+width:75px;
 
 }
 
-.wax:hover{
+.paper{
 
-transform:translate(-50%,-50%) scale(1.08);
+background-size:100% 100%;
 
-}
-
-.instruction{
-
-margin-top:40px;
-
-font-size:21px;
-
-font-style:italic;
+padding:70px 35px;
 
 }
 
-/* ===================================
-ANIMATION
-=================================== */
+.paper h2{
 
-@keyframes fadeUp{
-
-from{
-
-opacity:0;
-
-transform:translateY(40px);
+font-size:42px;
 
 }
 
-to{
+.paper p{
 
-opacity:1;
+font-size:20px;
 
-transform:translateY(0);
+line-height:2;
 
 }
+
+blockquote{
+
+font-size:24px;
+
+}
+
+.dream-paper h2{
+
+font-size:46px;
+
+}
+
+.dreamText{
+
+font-size:20px;
+
+}
+
+.caption{
+
+font-size:18px;
+
+}
+
+#dreams h1{
+
+font-size:44px;
+
+}
+
+}
+
+/* ======================================
+SMOOTH TRANSITION
+====================================== */
+
+button,
+.gallery,
+.wax{
+
+transition:.35s ease;
 
 }
