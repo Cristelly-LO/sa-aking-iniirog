@@ -1,6 +1,6 @@
-/* ===============================
+/* =====================================
 SA AKING INIIROG
-=============================== */
+===================================== */
 
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap');
 
@@ -15,48 +15,33 @@ scroll-behavior:smooth;
 }
 
 body{
-
-background:#F7F1E8;
-
-color:#4C382B;
-
+background:#f6efe7;
+color:#4d392b;
 font-family:'Cormorant Garamond',serif;
-
 overflow-x:hidden;
-
 }
 
 .hidden{
-
 display:none;
-
 }
 
 section{
-
 width:100%;
-
 min-height:100vh;
-
 display:flex;
-
 justify-content:center;
-
 align-items:center;
-
 flex-direction:column;
-
-padding:50px 20px;
-
+padding:60px 20px;
 }
 
-/* ===============================
+/* ===========================
 COVER
-=============================== */
+=========================== */
 
 #cover{
 
-background:#F7F1E8;
+background:#f6efe7;
 
 text-align:center;
 
@@ -74,9 +59,9 @@ animation:fadeUp 1.5s ease;
 
 font-family:'Great Vibes',cursive;
 
-font-size:95px;
+font-size:96px;
 
-color:#6A4B39;
+color:#694936;
 
 font-weight:400;
 
@@ -84,9 +69,9 @@ font-weight:400;
 
 .ornament{
 
-font-size:45px;
+font-size:46px;
 
-color:#B18A5A;
+color:#c49b63;
 
 margin:20px 0;
 
@@ -96,7 +81,7 @@ margin:20px 0;
 
 font-size:24px;
 
-color:#7A5C48;
+color:#86654d;
 
 margin-bottom:60px;
 
@@ -104,15 +89,15 @@ margin-bottom:60px;
 
 button{
 
-background:#6B4D39;
+background:#694936;
 
-color:#fff;
+color:white;
 
 border:none;
 
-padding:18px 45px;
-
 border-radius:50px;
+
+padding:18px 45px;
 
 font-size:20px;
 
@@ -120,23 +105,25 @@ cursor:pointer;
 
 transition:.35s;
 
+font-family:'Cormorant Garamond',serif;
+
 }
 
 button:hover{
 
-transform:translateY(-4px);
+transform:translateY(-3px);
 
-box-shadow:0 15px 30px rgba(0,0,0,.15);
+box-shadow:0 15px 30px rgba(0,0,0,.18);
 
 }
 
-/* ===============================
+/* ===========================
 ENVELOPE
-=============================== */
+=========================== */
 
 #envelope{
 
-background:#EFE4D2;
+background:#efe3d3;
 
 }
 
@@ -160,9 +147,9 @@ display:block;
 
 .wax{
 
-position:absolute;
-
 width:90px;
+
+position:absolute;
 
 left:50%;
 
@@ -172,7 +159,7 @@ transform:translate(-50%,-50%);
 
 cursor:pointer;
 
-transition:.3s;
+transition:.35s;
 
 }
 
@@ -188,21 +175,19 @@ margin-top:35px;
 
 font-size:22px;
 
-font-style:italic;
+color:#7c5b46;
 
-color:#7A5C48;
+font-style:italic;
 
 }
 
-/* ===============================
+/* ===========================
 LETTER
-=============================== */
+=========================== */
 
 #letter{
 
-background:#EFE4D2;
-
-padding:120px 20px;
+background:#efe3d3;
 
 }
 
@@ -212,15 +197,17 @@ width:100%;
 
 max-width:900px;
 
-background:url("paper.png") center/100% 100% no-repeat;
+margin:70px auto;
 
-min-height:1900px;
+background:url("paper.png") center center/cover no-repeat;
 
-padding:140px 110px;
+min-height:1200px;
 
-border-radius:8px;
+padding:130px 110px;
 
-box-shadow:0 25px 60px rgba(0,0,0,.18);
+border-radius:10px;
+
+box-shadow:0 25px 55px rgba(0,0,0,.18);
 
 }
 
@@ -230,9 +217,9 @@ text-align:center;
 
 font-family:'Great Vibes',cursive;
 
-font-size:72px;
+font-size:70px;
 
-color:#6A4B39;
+color:#694936;
 
 margin-bottom:20px;
 
@@ -242,17 +229,17 @@ margin-bottom:20px;
 
 text-align:center;
 
-color:#8A6C58;
-
 font-size:22px;
 
-margin-bottom:60px;
+color:#8c6d55;
+
+margin-bottom:55px;
 
 }
 
 .paper p{
 
-font-size:26px;
+font-size:25px;
 
 line-height:2.2;
 
@@ -264,15 +251,15 @@ margin-bottom:35px;
 
 blockquote{
 
-margin:60px 0;
-
 text-align:center;
 
-font-size:36px;
+font-size:34px;
+
+color:#8a5d40;
+
+margin:60px 0;
 
 font-style:italic;
-
-color:#8B5A3C;
 
 }
 
@@ -280,21 +267,35 @@ color:#8B5A3C;
 
 text-align:right;
 
-margin-top:120px;
-
-font-size:50px;
+margin-top:100px;
 
 font-family:'Great Vibes',cursive;
 
+font-size:50px;
+
 }
 
-/* ===============================
+.page-number{
+
+margin-top:80px;
+
+text-align:center;
+
+color:#8c6d55;
+
+letter-spacing:3px;
+
+font-size:18px;
+
+}
+
+/* ===========================
 DREAM GALLERY
-=============================== */
+=========================== */
 
 #dreams{
 
-background:#F7F1E8;
+background:#f6efe7;
 
 padding:120px 20px;
 
@@ -304,7 +305,7 @@ padding:120px 20px;
 
 width:100%;
 
-max-width:950px;
+max-width:900px;
 
 margin:auto;
 
@@ -316,9 +317,9 @@ text-align:center;
 
 font-family:'Great Vibes',cursive;
 
-font-size:72px;
+font-size:70px;
 
-color:#6A4B39;
+color:#694936;
 
 margin-bottom:35px;
 
@@ -330,9 +331,9 @@ font-size:25px;
 
 line-height:2;
 
-margin-bottom:70px;
+color:#5c4435;
 
-color:#5B4637;
+margin-bottom:70px;
 
 }
 
@@ -344,13 +345,13 @@ display:block;
 
 margin:70px auto 25px;
 
-border-radius:18px;
+border-radius:15px;
 
 border:12px solid #fff;
 
 box-shadow:0 20px 45px rgba(0,0,0,.18);
 
-transition:.4s ease;
+transition:.35s;
 
 }
 
@@ -364,7 +365,7 @@ transform:scale(1.02);
 
 font-size:22px;
 
-color:#7A5C48;
+color:#7c5b46;
 
 font-style:italic;
 
@@ -378,11 +379,11 @@ margin-bottom:70px;
 
 margin-top:90px;
 
-font-size:38px;
+font-size:36px;
+
+color:#694936;
 
 font-weight:400;
-
-color:#6A4B39;
 
 }
 
@@ -392,7 +393,7 @@ font-size:72px;
 
 letter-spacing:6px;
 
-color:#5B4637;
+color:#563c2c;
 
 margin:10px 0;
 
@@ -402,8 +403,6 @@ margin:10px 0;
 
 font-size:26px;
 
-margin-top:15px;
-
 margin-bottom:70px;
 
 }
@@ -412,17 +411,17 @@ margin-bottom:70px;
 
 margin-top:80px;
 
-color:#9B7D61;
-
 font-size:20px;
 
 line-height:1.8;
 
+color:#9b7c61;
+
 }
 
-/* ===============================
+/* ===========================
 ANIMATION
-=============================== */
+=========================== */
 
 @keyframes fadeUp{
 
@@ -453,9 +452,9 @@ animation:fadeUp 1.2s ease;
 
 }
 
-/* ===============================
+/* ===========================
 MOBILE
-=============================== */
+=========================== */
 
 @media(max-width:900px){
 
@@ -469,7 +468,7 @@ min-height:auto;
 
 .paper h2{
 
-font-size:52px;
+font-size:54px;
 
 }
 
@@ -533,6 +532,8 @@ width:70px;
 
 padding:70px 35px;
 
+min-height:auto;
+
 }
 
 .paper h2{
@@ -543,7 +544,7 @@ font-size:42px;
 
 .paper p{
 
-font-size:20px;
+font-size:19px;
 
 line-height:2;
 
@@ -555,9 +556,15 @@ font-size:24px;
 
 }
 
+.page-number{
+
+margin-top:50px;
+
+}
+
 .dream-paper h2{
 
-font-size:48px;
+font-size:46px;
 
 }
 
@@ -581,9 +588,9 @@ font-size:44px;
 
 }
 
-/* ===============================
-SMOOTH TRANSITIONS
-=============================== */
+/* ===========================
+TRANSITIONS
+=========================== */
 
 button,
 .wax,
