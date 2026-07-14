@@ -1,461 +1,85 @@
-/* =========================
-GOOGLE STYLE RESET
-========================= */
+// =========================
+// ELEMENTS
+// =========================
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
+const cover = document.getElementById("cover");
+const envelope = document.getElementById("envelope");
+const letter = document.getElementById("letter");
+const dreams = document.getElementById("dreams");
 
-html{
-scroll-behavior:smooth;
-}
+const openBook = document.getElementById("openBook");
+const wax = document.getElementById("wax");
 
-body{
+const music = document.getElementById("music");
 
-font-family:'Cormorant Garamond', serif;
+// =========================
+// OPEN BOOK
+// =========================
 
-background:#F8F3EB;
+openBook.addEventListener("click", () => {
 
-color:#4D3B2E;
+cover.style.opacity = "0";
 
-overflow-x:hidden;
+setTimeout(() => {
 
-}
+cover.classList.add("hidden");
+envelope.classList.remove("hidden");
 
-/* =========================
-HIDDEN
-========================= */
+envelope.style.opacity = "0";
 
-.hidden{
+setTimeout(() => {
+envelope.style.opacity = "1";
+},100);
 
-display:none;
+},800);
 
-}
+});
 
-/* =========================
-GENERAL SECTION
-========================= */
+// =========================
+// OPEN ENVELOPE
+// =========================
 
-section{
+wax.addEventListener("click", () => {
 
-min-height:100vh;
+envelope.style.opacity="0";
 
-display:flex;
+setTimeout(()=>{
 
-justify-content:center;
+envelope.classList.add("hidden");
+letter.classList.remove("hidden");
 
-align-items:center;
+letter.style.opacity="0";
 
-flex-direction:column;
+setTimeout(()=>{
 
-padding:40px;
+letter.style.opacity="1";
 
-}
+},100);
 
-/* =========================
-COVER
-========================= */
+music.play();
 
-#cover{
+},800);
 
-background:url("images/paper.jpg") center/cover no-repeat;
+});
 
-text-align:center;
+// =========================
+// LETTER TO DREAMS
+// =========================
 
-}
+window.addEventListener("scroll",()=>{
 
-.cover-content{
+if(letter.classList.contains("hidden")) return;
 
-max-width:700px;
+const scrollBottom =
+window.innerHeight + window.scrollY;
 
-animation:fadeIn 2s ease;
+const pageHeight =
+document.body.offsetHeight;
 
-}
+if(scrollBottom >= pageHeight-10){
 
-.subtitle{
-
-letter-spacing:3px;
-
-text-transform:uppercase;
-
-color:#96795d;
-
-font-size:18px;
+dreams.classList.remove("hidden");
 
 }
 
-.cover-content h1{
-
-font-family:'Great Vibes', cursive;
-
-font-size:90px;
-
-font-weight:400;
-
-margin:20px 0;
-
-color:#5B3D2E;
-
-}
-
-.author{
-
-font-size:26px;
-
-}
-
-.line{
-
-width:130px;
-
-height:1px;
-
-background:#C8A36A;
-
-margin:35px auto;
-
-}
-
-.date{
-
-font-size:22px;
-
-margin-bottom:45px;
-
-}
-
-/* =========================
-BUTTON
-========================= */
-
-button{
-
-border:none;
-
-background:#71523C;
-
-color:white;
-
-padding:18px 45px;
-
-border-radius:50px;
-
-cursor:pointer;
-
-font-size:19px;
-
-transition:.35s;
-
-}
-
-button:hover{
-
-transform:translateY(-3px);
-
-box-shadow:0 10px 20px rgba(0,0,0,.18);
-
-}
-
-/* =========================
-ENVELOPE
-========================= */
-
-#envelope{
-
-background:#EFE4D2;
-
-}
-
-.envelope-wrapper{
-
-position:relative;
-
-width:340px;
-
-}
-
-.envelope{
-
-width:100%;
-
-}
-
-.wax{
-
-width:75px;
-
-position:absolute;
-
-left:50%;
-
-top:48%;
-
-transform:translate(-50%,-50%);
-
-cursor:pointer;
-
-transition:.3s;
-
-}
-
-.wax:hover{
-
-transform:translate(-50%,-50%) scale(1.08);
-
-}
-
-.instruction{
-
-margin-top:35px;
-
-font-style:italic;
-
-font-size:20px;
-
-}
-
-/* =========================
-LETTER
-========================= */
-
-#letter{
-
-background:#F6EFE5;
-
-}
-
-.paper{
-
-background:url("images/paper.jpg");
-
-background-size:cover;
-
-max-width:900px;
-
-width:100%;
-
-padding:80px;
-
-border-radius:12px;
-
-box-shadow:0 20px 50px rgba(0,0,0,.18);
-
-}
-
-.paper h2{
-
-font-family:'Great Vibes';
-
-font-size:62px;
-
-text-align:center;
-
-margin-bottom:20px;
-
-}
-
-.letter-date{
-
-text-align:center;
-
-margin-bottom:45px;
-
-color:#7D6655;
-
-}
-
-.paper p{
-
-font-size:24px;
-
-line-height:2.1;
-
-margin-bottom:28px;
-
-}
-
-blockquote{
-
-text-align:center;
-
-font-size:34px;
-
-font-style:italic;
-
-margin:50px 0;
-
-color:#8B5E3C;
-
-}
-
-.signature{
-
-text-align:right;
-
-font-family:'Great Vibes';
-
-font-size:42px;
-
-margin-top:80px;
-
-}
-
-/* =========================
-DREAM GALLERY
-========================= */
-
-#dreams{
-
-background:#F8F3EB;
-
-text-align:center;
-
-}
-
-#dreams h2{
-
-font-family:'Great Vibes';
-
-font-size:65px;
-
-margin-bottom:30px;
-
-}
-
-.gallery{
-
-max-width:900px;
-
-}
-
-.gallery img{
-
-width:100%;
-
-border-radius:15px;
-
-margin:50px 0 25px;
-
-box-shadow:0 15px 35px rgba(0,0,0,.15);
-
-}
-
-.gallery p{
-
-font-size:24px;
-
-line-height:1.9;
-
-margin-bottom:50px;
-
-}
-
-#dreams h3{
-
-margin-top:60px;
-
-font-size:34px;
-
-font-weight:400;
-
-}
-
-#dreams h1{
-
-font-size:70px;
-
-margin:10px 0;
-
-letter-spacing:4px;
-
-}
-
-/* =========================
-ANIMATION
-========================= */
-
-@keyframes fadeIn{
-
-from{
-
-opacity:0;
-
-transform:translateY(30px);
-
-}
-
-to{
-
-opacity:1;
-
-transform:translateY(0);
-
-}
-
-}
-
-/* =========================
-MOBILE
-========================= */
-
-@media(max-width:768px){
-
-.cover-content h1{
-
-font-size:60px;
-
-}
-
-.paper{
-
-padding:35px;
-
-}
-
-.paper h2{
-
-font-size:44px;
-
-}
-
-.paper p{
-
-font-size:20px;
-
-}
-
-blockquote{
-
-font-size:28px;
-
-}
-
-.gallery p{
-
-font-size:20px;
-
-}
-
-#dreams h2{
-
-font-size:45px;
-
-}
-
-#dreams h1{
-
-font-size:42px;
-
-}
-
-button{
-
-width:100%;
-
-max-width:320px;
-
-}
-
-}
+});
