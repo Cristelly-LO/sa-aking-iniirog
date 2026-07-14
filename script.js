@@ -1,6 +1,7 @@
-// ==============================
-// ELEMENTS
-// ==============================
+// ===============================
+// SA AKING INIIROG
+// script.js
+// ===============================
 
 const cover = document.getElementById("cover");
 const envelope = document.getElementById("envelope");
@@ -10,10 +11,9 @@ const dreams = document.getElementById("dreams");
 const openBook = document.getElementById("openBook");
 const wax = document.getElementById("wax");
 
-
-// ==============================
-// START
-// ==============================
+// ===============================
+// OPEN BOOK
+// ===============================
 
 openBook.addEventListener("click", () => {
 
@@ -37,9 +37,9 @@ envelope.style.opacity = "1";
 
 });
 
-// ==============================
+// ===============================
 // OPEN ENVELOPE
-// ==============================
+// ===============================
 
 wax.addEventListener("click", () => {
 
@@ -59,8 +59,6 @@ letter.style.opacity = "1";
 
 },100);
 
-music.play().catch(() => {});
-
 window.scrollTo({
 top:0,
 behavior:"smooth"
@@ -70,27 +68,23 @@ behavior:"smooth"
 
 });
 
-// ==============================
+// ===============================
 // SHOW DREAM GALLERY
-// ==============================
+// ===============================
 
 window.addEventListener("scroll", () => {
 
 if(letter.classList.contains("hidden")) return;
 
-const scrollPosition =
-window.scrollY + window.innerHeight;
+const scrollBottom =
+window.innerHeight + window.scrollY;
 
 const pageHeight =
-document.body.offsetHeight;
+document.documentElement.scrollHeight;
 
-if(scrollPosition >= pageHeight - 100){
+if(scrollBottom >= pageHeight - 10){
 
 dreams.classList.remove("hidden");
-
-dreams.scrollIntoView({
-behavior:"smooth"
-});
 
 }
 
