@@ -1,0 +1,293 @@
+/* ==========================
+RESET
+========================== */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+
+font-family:'Cormorant Garamond', serif;
+
+background:#f8f3eb;
+
+color:#4d3b2e;
+
+overflow-x:hidden;
+
+}
+
+/* ==========================
+GENERAL
+========================== */
+
+.hidden{
+display:none;
+}
+
+section{
+
+min-height:100vh;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+padding:40px;
+
+}
+
+/* ==========================
+COVER PAGE
+========================== */
+
+#cover{
+
+background:url("images/paper.jpg") center center/cover no-repeat;
+
+text-align:center;
+
+}
+
+.cover-content{
+
+max-width:700px;
+
+animation:fadeIn 2s ease;
+
+}
+
+.book-type{
+
+font-size:20px;
+
+letter-spacing:2px;
+
+text-transform:uppercase;
+
+color:#8b7355;
+
+}
+
+.cover-content h1{
+
+font-family:'Great Vibes', cursive;
+
+font-size:85px;
+
+font-weight:400;
+
+margin:25px 0;
+
+}
+
+.author{
+
+font-size:24px;
+
+margin-top:10px;
+
+}
+
+.divider{
+
+width:120px;
+
+height:1px;
+
+background:#b89d76;
+
+margin:35px auto;
+
+}
+
+.date{
+
+font-size:22px;
+
+margin-bottom:45px;
+
+}
+
+/* ==========================
+BUTTON
+========================== */
+
+#beginButton{
+
+background:#6f513c;
+
+color:white;
+
+border:none;
+
+padding:18px 42px;
+
+border-radius:50px;
+
+font-size:20px;
+
+font-family:'Cormorant Garamond', serif;
+
+cursor:pointer;
+
+transition:.35s;
+
+}
+
+#beginButton:hover{
+
+transform:translateY(-3px);
+
+box-shadow:0 12px 25px rgba(0,0,0,.18);
+
+}
+
+/* ==========================
+ENVELOPE
+========================== */
+
+#envelope{
+
+background:#efe4d2;
+
+flex-direction:column;
+
+}
+
+.envelope-wrapper{
+
+position:relative;
+
+width:340px;
+
+}
+
+.envelope-image{
+
+width:100%;
+
+display:block;
+
+}
+
+.wax-seal{
+
+position:absolute;
+
+width:78px;
+
+left:50%;
+
+top:49%;
+
+transform:translate(-50%,-50%);
+
+cursor:pointer;
+
+transition:.3s;
+
+}
+
+.wax-seal:hover{
+
+transform:translate(-50%,-50%) scale(1.08);
+
+}
+
+.instruction{
+
+margin-top:35px;
+
+font-size:22px;
+
+font-style:italic;
+
+}
+
+/* ==========================
+ANIMATION
+========================== */
+
+@keyframes fadeIn{
+
+from{
+
+opacity:0;
+
+transform:translateY(20px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+/* ==========================
+MOBILE
+========================== */
+
+@media(max-width:768px){
+
+.cover-content h1{
+
+font-size:60px;
+
+}
+
+.book-type{
+
+font-size:16px;
+
+}
+
+.author{
+
+font-size:20px;
+
+}
+
+.date{
+
+font-size:18px;
+
+}
+
+#beginButton{
+
+width:100%;
+
+max-width:320px;
+
+font-size:18px;
+
+}
+
+.envelope-wrapper{
+
+width:280px;
+
+}
+
+.wax-seal{
+
+width:65px;
+
+}
+
+}
